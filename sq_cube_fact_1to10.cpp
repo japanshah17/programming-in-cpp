@@ -1,11 +1,13 @@
 #include <iostream>
-#define sq i*i
-#define cube i*i*i
 using namespace std;
 
-int fact(int n)
+class myclass
 {
-    int ans=1;
+	public:
+		
+	double factorial(int n)
+{
+    double ans=1;
     while(n>=1)
     {
         ans = ans*n;
@@ -14,11 +16,27 @@ int fact(int n)
     return ans;
 }
 
+int square(int n)
+{
+	return n*n;
+}
+
+int cube(int n)
+{
+	return n*n*n;
+}
+
+};
 int main()
 {
+	myclass a1;
+	int i,s,c,f;
     for(int i=1;i<=10;i++)
     {
-        cout<<"square,cube and factorial for "<<i<<" is : "<<sq<<","<<cube<<" and "<<fact(i)<<endl<<endl;
+    	s=a1.square(i);
+    	c=a1.cube(i);
+    	f=a1.factorial(i);
+        cout<<"square,cube and factorial for "<<i<<" is : "<<s<<","<<c<<" and "<<f<<endl;
     }
 
     return 0;
