@@ -30,7 +30,6 @@ class time
 			
 		}
 		
-		
 		void print()
 		{
 			cout<< h<<" hours and "<<m<<" minutes "<<endl;

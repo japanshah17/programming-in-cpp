@@ -3,6 +3,11 @@ using namespace std;
 
 class numbers
 {
+ private:
+ void display(int ans)
+ {
+	cout<<"the sum is "<<ans;	
+ }	
  public:
  void getnumbers()
  {
@@ -19,7 +24,7 @@ class numbers
 	 	{
 	 	sum=sum+arr[i];
 		}
-	 	cout<<"the sum is:"<<sum;
+		display(sum);
 	}	
  }
 };

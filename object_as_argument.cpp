@@ -19,7 +19,7 @@ class add
 
 		void print()
 		{
-			cout<<"Value of A :  "<<a<<endl;
+			cout<<a<<endl;
 		}
 };
 
@@ -40,6 +40,7 @@ int main()
 	//printing the values
 	d1.print();
 	d2.print();
+	cout<<endl<<" The Sum Is: ";
 	d3.print();
 
 	return 0;

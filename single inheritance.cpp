@@ -3,12 +3,13 @@ using namespace std;
 class A
 {
 	public:
-		
 		int value;
 		void print()	
 		{
 			cout<<"print base A"<<endl;	
 		}
+	protected:
+		int j;
 };
 class B : public A
 {
@@ -22,6 +23,6 @@ class B : public A
 int main()
 {
 	B obj;
-	obj.print();	
+	obj.print();
 	return 0;
 }

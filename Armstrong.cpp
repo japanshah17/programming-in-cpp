@@ -12,9 +12,7 @@ int power(int base,int exp)
     }
 
     return result;
-    
 }
-
 int main()
 {
 	
@@ -42,4 +40,3 @@ int main()
 	}
 	    return 0;
 }
-

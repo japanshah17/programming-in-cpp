@@ -1,4 +1,3 @@
-21) Write a program to demonstrate static data member and static member function.
 #include <iostream>
 #include <string>
 using namespace std;

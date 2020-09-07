@@ -8,30 +8,28 @@ class A
 			cout<<"print base A"<<endl;	
 		}
 };
-class B
+class B : public A
 {
 		public:
 		void print()	
 		{
-			cout<<"print base B"<<endl;	
+			cout<<"print B"<<endl;	
 		}
 };
-class AB : public A,public B
+class C : public A
 {
 	public:
 		void print()	
 		{
-			cout<<"print derived"<<endl;	
-			A::print();
-			B::print();
+			cout<<"print C"<<endl;	
 		}
 };
 int main()
 {
 
-	AB ab;
-	ab.print();
-	B base;
-	base.print();	
+	B ob;
+	C oc;
+	ob.print();
+	oc.print();	
 	return 0;
 }
